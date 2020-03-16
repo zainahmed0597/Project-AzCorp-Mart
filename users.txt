@@ -1,0 +1,6 @@
+1 admin	admin
+2 zain password1
+3 sami password2
+4 hamza password3
+5 haris password4
+6 subhan password5

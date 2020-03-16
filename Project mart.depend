@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1584189626 source:c:\users\zain ahmed\google drive\code\project\project mart\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+

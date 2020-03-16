@@ -1,0 +1,19 @@
+Create an inventory of Displays (Hardware)
+Display:
+Specs(can be many)
+type
+price
+Warranty
+Company Name
+Supplier Name
+Product Name
+There should be 20 different display hardware items to be already there in a store name
+AZCorp Screens
+A person can login into Azcorp Screens if they provide @azcorpentertainment.com email and ther password.
+After logging-in they must pe able to
+CREATE
+UPDATE
+GET Details of Single display
+DELETE a display.
+Without loggin in anyone can check already added products with only these details(Name, Price, DisplayType)
+You can ask user to press(1) to see all records, press(2) to login and do actions or (0) to exit system. (edited) 
