@@ -102,9 +102,32 @@ class User{
 void displayItems(int x){
 
   if(x==1){
-    
+    User user;
+    user.login();
   }
-  if(x==2){}
+  if(x==2){
+      Product product;
+      product.showProduct();
+  }
+}//________________________________
+
+//display items Function
+void displayItems2(int x){
+
+  if(x==1){
+    Product product;
+    product.showProduct();
+  }
+  if(x==2){
+    Product product;
+    product.createProduct();
+  }
+  if(x==3){
+      
+  }
+  if(x==4){
+      
+  }
 }//________________________________
 
 //Step1 Function
@@ -112,36 +135,65 @@ int Step1(){
   int choice;
 
   cout << "\n   AzCorp Mart    " << endl;
-  cout << "\n1 - Food items" << endl;
-  cout << "2 - Login" << endl;
-  cout << "0 - quit program\n" << endl;
+  cout << "\n1 - Login" << endl;
+  cout << "2 - Shop Products" << endl;
+  cout << "3 - quit program\n" << endl;
   cout << endl;
 
   cin >> choice;
   return choice;
 }
 
-int main()
-{
-  //   int whatYouWant;
-  //   whatYouWant = Step1();
-  //   while(whatYouWant !=0){
-  //     switch(whatYouWant){
-  //       case 1:
-  //         displayItems(1); 
-  //         break;
-  //       case 2:
-  //         displayItems(2);
-  //         break;
-  //       case 3:
-  //         displayItems(3);
-  //         break;
-  //     }
-  //     whatYouWant = Step1();
-  // }
+//Step2 Function
+int Step2(){
+  int choice;
 
-  User uz;
-  uz.createAccount();
-  uz.login();
+  cout << "\n   AzCorp Mart    " << endl;
+  cout << "\n1 - Shop Products" << endl;
+  cout << "2 - Create Products" << endl;
+  cout << "3 - Edit Products" << endl;
+  cout << "4 - Delete Products" << endl;
+  cout << "5 - Exit Program\n" << endl;
+  cout << endl;
 
+  cin >> choice;
+  return choice;
+}
+
+
+int main(){
+
+    int whatStep2Want;
+    int whatYouWant;
+    whatYouWant = Step1();
+    while(whatYouWant !=3){
+      switch(whatYouWant){
+        case 1:
+          displayItems(1);
+          whatStep2Want = Step2();
+              while(whatStep2Want !=5){
+              switch(whatStep2Want){
+                case 1:
+                  displayItems2(1);
+                  break;
+                case 2:
+                  displayItems2(2);
+                  break;
+                case 3:
+                  displayItems2(3);
+                  break; 
+                case 4:
+                  displayItems2(4);
+                  break;   
+              } 
+              whatStep2Want = Step2();
+          break;
+
+        case 2:
+          displayItems(2);
+          break;
+        } 
+      whatYouWant = Step1();
+    }
+  }
 }
